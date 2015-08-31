@@ -1,25 +1,31 @@
 import java.util.*;
-public class Sets {
-	private Set<Programador> st;
-	private Programador primero;
-	private Iterator ir;
-	
-	public class Sets(int tipo){
-		Iterator ir  = new Iterable();
+	public Sets(int tipo){
 		if(tipo == 0){
 		}
-			st = new HashSet<Programador>();
+			web = new HashSet<Programador>();
+			java = new HashSet<Programador>();
+			moviles = new HashSet<Programador>();
 		if(tipo == 1){
-			st = new TreeSet<Programador>();
-		
+			web = new TreeSet<Programador>();
+			java = new TreeSet<Programador>();
+			moviles = new TreeSet<Programador>();
 		}
 		
 		if(tipo == 2){
-			st = new LinkedHashSet<Programador>();
+			web = new LinkedHashSet<Programador>();
+			java = new LinkedHashSet<Programador>();
+			moviles = new LinkedHashSet<Programador>();
 		}
 	}
 	
+	public void agregar(String Name,int tipo){
+		primero = new Programador(Name,tipo);
+		web.add(primero);
+	}
 	
-	
+	public void primera(){
+		
+	}
 	
 }
+	
